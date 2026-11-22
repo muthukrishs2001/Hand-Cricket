@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand Cricket - Toss</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+</head>
+
+<body>
+    <main class="toss-overall">
+        <div class="container">
+        <h1 class="title">HAND CRICKET</h1>
+        <p class="subtitle" id="tossResult">Call the Toss</p>
+
+        <div class="coin-display">
+            <div class="coin" id="coin">TOSS</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="toss-btn" onclick="matchToss('heads')">HEADS</button>
+            <button class="toss-btn" onclick="matchToss('tails')">TAILS</button>
+        </div>
+
+        <p class="result-text" id="tossResult">Choose Heads or Tails to flip!</p>
+    </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

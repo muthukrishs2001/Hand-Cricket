@@ -1,45 +1,21 @@
-function matchToss(userchioce) {
+function matchStart() {
 
-    let tossDetails = ['head','tail'];
-    let choosePosition = ['batting', 'bowling'];
-    let tossResult = document.getElementById("tossResult");
-    let tossHead = document.getElementById("coin");
-    let random = Math.floor(Math.random()*tossDetails.length);
+    let firstPlayer = document.getElementById("p1").value,
+        secondPlayer = document.getElementById("p2").value,
+        thirdPlayer = document.getElementById("p3").value,
+        fourthPlayer = document.getElementById("p4").value,
+        fifthPlayer = document.getElementById("p5").value;
 
-    switch(userchioce) {
-        case 'heads':
-            if(tossDetails[random] === 'head') {
-                tossResult.innerText = "You Won the Toss";
-                tossHead.innerText = tossDetails[random];
-                setTimeout(() => {
-                    window.location.href = "./batorbowl.html";
-                }, 2000);
+    setTimeout(() => {
+        window.location.href = "./index.html"
+    }, 2000)
 
-            } else {
-                tossResult.innerText = "You Loss the Toss";
-                tossHead.innerText = tossDetails[random];
-                setTimeout(() => {
-                    window.location.href = "./batorbowl.html";
-                }, 2000);
-            }
-            break;
-        case 'tails':
-            if(tossDetails[random] === 'tail') {
-                tossResult.innerText = "You Won the Toss";
-                tossHead.innerText = tossDetails[random];
-                setTimeout(() => {
-                    window.location.href = "./batorbowl.html";
-                    
-                }, 2000);
+    let firstBox = document.getElementById("name1");
+        secondBox = document.getElementById
 
-            } else {
-                tossResult.innerText = "You Loss the Toss";
-                tossHead.innerText = tossDetails[random];
-                setTimeout(() => {
-                    window.location.href = "./batorbowl.html";
-                }, 2000);
-            }
-            break;
-    }
-    
+    firstBox.innerText = firstPlayer;
+
+    console.log(firstPlayer);
+
 }
+

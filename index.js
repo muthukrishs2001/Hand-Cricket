@@ -1,6 +1,7 @@
 function matchToss(userchioce) {
 
     let tossDetails = ['head','tail'];
+    let choosePosition = ['batting', 'bowling'];
     let tossResult = document.getElementById("tossResult");
     let tossHead = document.getElementById("coin");
     let random = Math.floor(Math.random()*tossDetails.length);
@@ -12,14 +13,14 @@ function matchToss(userchioce) {
                 tossHead.innerText = tossDetails[random];
                 setTimeout(() => {
                     window.location.href = "./batorbowl.html";
-                }, 3000);
+                }, 2000);
 
             } else {
                 tossResult.innerText = "You Loss the Toss";
                 tossHead.innerText = tossDetails[random];
                 setTimeout(() => {
                     window.location.href = "./batorbowl.html";
-                }, 3000);
+                }, 2000);
             }
             break;
         case 'tails':
@@ -29,14 +30,14 @@ function matchToss(userchioce) {
                 setTimeout(() => {
                     window.location.href = "./batorbowl.html";
                     
-                }, 3000);
+                }, 2000);
 
             } else {
                 tossResult.innerText = "You Loss the Toss";
                 tossHead.innerText = tossDetails[random];
                 setTimeout(() => {
                     window.location.href = "./batorbowl.html";
-                }, 3000);
+                }, 2000);
             }
             break;
     }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand Cricket - Match Arena</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+</head>
+
+<body>
+    <main class="index-overall">
+        <div class="game-wrapper">
+        <!-- 1. Game Title -->
+        <header class="game-header">
+            <h1 class="game-title">HAND CRICKET ARENA</h1>
+            <div class="total-board">
+                <span>TOTAL: <strong id="totalScore">0</strong></span>
+                <span>TARGET: <strong id="targetScore">--</strong></span>
+            </div>
+        </header>
+
+        <!-- 2. Five Player Boxes (Name + Individual Score) -->
+        <section class="players-grid">
+            <div class="player-box active-batter" id="box1">
+                <div class="p-name" id="name1">Player 1</div>
+                <div class="p-score" id="score1">0</div>
+            </div>
+
+            <div class="player-box" id="box2">
+                <div class="p-name" id="name2">Player 2</div>
+                <div class="p-score" id="score2">0</div>
+            </div>
+
+            <div class="player-box" id="box3">
+                <div class="p-name" id="name3">Player 3</div>
+                <div class="p-score" id="score3">0</div>
+            </div>
+
+            <div class="player-box" id="box4">
+                <div class="p-name" id="name4">Player 4</div>
+                <div class="p-score" id="score4">0</div>
+            </div>
+
+            <div class="player-box" id="box5">
+                <div class="p-name" id="name5">Player 5</div>
+                <div class="p-score" id="score5">0</div>
+            </div>
+        </section>
+
+        <!-- 3. Three Boxes: Me | VS | Computer -->
+        <section class="arena-grid">
+            <!-- Box 1: Me -->
+            <div class="arena-box side-box">
+                <span class="role-tag batting-tag" id="meRole">BATTING</span>
+                <h2>ME</h2>
+                <div class="move-display" id="meMove">-</div>
+            </div>
+
+            <!-- Box 2: VS -->
+            <div class="arena-box vs-box">
+                <div class="vs-circle">VS</div>
+                <p class="status-msg" id="commentary">Select your run!</p>
+            </div>
+
+            <!-- Box 3: Computer -->
+            <div class="arena-box side-box">
+                <span class="role-tag bowling-tag" id="compRole">BOWLING</span>
+                <h2>COMPUTER</h2>
+                <div class="move-display" id="compMove">-</div>
+            </div>
+        </section>
+
+        <!-- Run Controls for your JS Logic -->
+        <section class="controls">
+            <button class="run-btn" data-run="1">1</button>
+            <button class="run-btn" data-run="2">2</button>
+            <button class="run-btn" data-run="3">3</button>
+            <button class="run-btn" data-run="4">4</button>
+            <button class="run-btn" data-run="5">5</button>
+            <button class="run-btn" data-run="6">6</button>
+        </section>
+    </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

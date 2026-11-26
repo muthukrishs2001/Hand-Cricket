@@ -14,7 +14,7 @@
         <h1 class="title2">PLAYING V LINEUP</h1>
         <p class="subtitle2">Enter your 5 squad members</p>
 
-        <form class="player-form" id="playerForm">
+        <div class="player-form" id="playerForm">
             <div class="input-group">
                 <label for="p1">Player 1 (Captain)</label>
                 <input type="text" id="p1" placeholder="Enter Player 1 Name" required>
@@ -40,8 +40,8 @@
                 <input type="text" id="p5" placeholder="Enter Player 5 Name" required>
             </div>
 
-            <button onclick="matchStart()" class="start-btn">START MATCH →</button>
-        </form>
+            <button id="btn" class="start-btn">START MATCH →</button>
+        </div>
     </div>
     </main>
     <script src="./index.js"></script>

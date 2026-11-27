@@ -1,7 +1,7 @@
 let step = 1;
 
-function pageChange() {
     if (step === 1) {
+        window.location.href = "./player.html";
         let btn = document.getElementById("btn");
 
         if (btn) {
@@ -52,6 +52,3 @@ function pageChange() {
             fifthPlayer.innerText = fifthValue;
         }
     }
-}
-
-pageChange();

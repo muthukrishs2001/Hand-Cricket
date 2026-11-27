@@ -1,7 +1,8 @@
 let step = 1;
 
+window.location.href = "./player.html";
+
     if (step === 1) {
-        window.location.href = "./player.html";
         let btn = document.getElementById("btn");
 
         if (btn) {
